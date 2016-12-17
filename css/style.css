@@ -18,7 +18,7 @@ html,body {
     }
     .swiper-slide {
         text-align: center;
-        font-size: 18px;
+        font-size: 16px;
         background: #abcdef;
 
         /* Center slide text vertically */
@@ -36,7 +36,9 @@ html,body {
         align-items: center;*/
     }
 /*自带的基础css结束*/
-
+.swiper-slide h2{
+	margin: 10px 0;
+}
 /*音乐*/
 #music{
 	width: 60px;
@@ -76,29 +78,29 @@ html,body {
 	background-size: 100% 100%;
 }
 .swiper-slide.one .top{
-	width: 70%;
-	height: 50%;
+	width:100%;
 	margin: 0 auto;
 	margin-top: 10%;
 	overflow: hidden;
+	text-align: center;
 }
 .swiper-slide.one .top img{
-	width: 100%;
+	width: 80%;
 	vertical-align: bottom;
 }
 .swiper-slide.one .top p{
 	margin: 0;
-	font-family: fangzheng_zyjt; font-size: 28px;
-	height: 40px;
+	font-family: fangzheng_zyjt;
+	height:20px;
 	padding: 0;
 	z-index: 9;
 	color: #6495ED;
 }
 .swiper-slide.one .top span{
-	font-size: 18px;
 	display: inline-block;
 	width: 100%;
 	color: #3fc;
+	font-size: 14px;
 }
 .swiper-slide.one .bottom{
 	width: 100%;
@@ -141,21 +143,37 @@ html,body {
 .swiper-slide.two{
 	position: relative;
 }
+.teng{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right:-50%;
+	top: 0;
+}
+.teng img{
+	width: 100%;
+}
 .swiper-slide.two .left{
 	overflow: hidden;
 	z-index: 10;
-	border: 9px solid #FFEBEB;
+	border: 3px solid #FFEBEB;
 	position: absolute;
 	left: 3%;
 	top: 5%;
-	width: 40%;
+	width: 80%;
 	height: 25%;
 	border-radius: 8px;
 	box-shadow: 2px 4px 3px 5px #888;
 }
+.twoHua{
+	width: 20%;
+	position: absolute;
+	left: 0px;
+	top: 3px;
+}
 .swiper-slide.two .left p{
 	width: 100%;
-	height: 106px;
+	height: 80%;
 	margin: 0;
 	padding: 0;
 	line-height: 106px;
@@ -164,39 +182,40 @@ html,body {
 }
 .swiper-slide.two .left img{
 	width: 100%;
-	height: 106px;
+	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
 }
-.swiper-slide.two .left span{
-	width: 100%;
-	height: 60px;
-	line-height: 60px;
-	display: inline-block;
-	color: #FF6347;
-	font-weight: 900;
-}
 .swiper-slide.two .right{
 	width: 86%;
 	border: 9px solid #FFEBEB;
-	background: #FFEBEB;
+	background: #FFEBEB url(../images/hua.jpg) no-repeat 0 bottom;
 	position: absolute;
 	left: 5%;
 	top: 2%;
+	height: 90%;
+	overflow: hidden;
+	font-size: 14px;
 }
 .swiper-slide.two .right .top{
 	width: 100%;
 	overflow: hidden;
 	margin-bottom: 3%;
 }
-.swiper-slide.two .right .top p{
+.swiper-slide.two .right .top div{
+	height: 200px;
+	overflow-y: auto;
+}
+.swiper-slide.two .right .top div p{
 	text-align: left;
 	text-indent: 32px;
-	color: #666;
+	color: #f0f;
+	font-weight: 900;
 }
 .swiper-slide.two .right .top img{
 	width: 100%;
+	height:40%;
 }
 .swiper-slide.two .right>img{
 	width: 100%;
@@ -218,7 +237,7 @@ html,body {
 #swiper-four .timeline-item {
 	position: relative;
 	color: #FFF8DC;
-	height: 140px; }
+	height: 60px; }
 #swiper-four .timeline-item .timeline-icon {
 	width: 30px;
 	height: 30px;
@@ -257,7 +276,7 @@ overflow: hidden;}
 	}
 
 	100% {
-		height:120px;  
+		height:40px;  
 	}
 }
 
@@ -267,12 +286,18 @@ overflow: hidden;}
 	}
 
 	100% {
-		height:120px;  
+		height:40px;  
 	}
 }
 .slide5 img{
 	width: 80%;
-	padding-left: 5s%;
+	padding-left: 5%;
+}
+.slide5 p{
+	width: 90%;
+	padding-left: 5%;
+	text-indent: 30px;
+	text-align: left;
 }
 
 
