@@ -48,9 +48,21 @@ music.onclick = function(){
 //音乐控制结束
 
 
-
-
-
+var slide7Lun=document.getElementById('slide7Lun');
+var oli=slide7Lun.getElementsByTagName('li');
+var speed=true;           //图片运行的速度  默认往右
+var timer=setInterval(move,2000);      //  每10微秒循环一次函数move
+function move(){
+	if(speed){
+		oli[0].style.display = "none";
+		oli[1].style.display = "block";
+		speed = false;
+	}else{
+		oli[1].style.display = "none";
+		oli[0].style.display = "block";
+		speed = true;
+	}
+}
 
 
 
